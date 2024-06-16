@@ -29,15 +29,15 @@ export default function Capabilities() {
     <div
     className="min-w-full"
     >
-        <div className="px-20 py-20 w-full h-full space-y-10">
-            <div className="flex items-start justify-center" ref={capRef}>
+        <div className="xl:px-20 xl:py-20 px-8 py-14 w-full h-full space-y-10">
+            <div className="flex flex-col xl:flex-row gap-y-5 items-start justify-center" ref={capRef}>
                 <p className="flex-1 text-5xl font-semibold">Capabilities</p>
                 <p className="flex-1 text-lg leading-8">
                 We offer a wide range of digital solutions and best-in-class platforms to deliver meaningful outcomes, enhance customer experiences, and transform industries at scale and with unparalleled speed.
                 </p>
             </div>
 
-            <div className="grid grid-cols-4 grid-rows-2 gap-3">
+            <div className="grid xl:grid-cols-4 grid-cols-1 grid-rows-2 gap-3">
                 {CAPABILITIES.map((item) => (
                     <div key={item.label} className="w-full h-[450px] relative group">
                         <div className="relative h-full w-full overflow-hidden">

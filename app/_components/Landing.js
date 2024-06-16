@@ -21,7 +21,7 @@ function Landing() {
     } , [])
 
   return (
-    <div className="relative min-h-[885px] w-screen overflow-hidden">
+    <div className="relative min-h-[885px] min-w-[100%] overflow-hidden">
         <div className="flex flex-col w-fit xl:h-[300px] xl:w-[840px] xl:gap-y-5 gap-y-3 px-10 py-4">
             <h1 ref={titleRef} className="xl:text-8xl text-4xl xl:font-semibold font-medium text-zinc-800 tracking-tight">Scale at Speed</h1>
             <p ref={paragraphRef}
