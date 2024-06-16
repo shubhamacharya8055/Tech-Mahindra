@@ -249,3 +249,47 @@ export const NAV_LINKS = [
         href: "/contact"
     }
 ]
+
+
+export const CAPABILITIES = [
+    {
+        label: "Artificial Intelligence",
+        desc: "Amplify your business with TechM by infusing AI in every aspect of your business, democratizing AI responsibilty",
+        img: "/ai.jpg"
+    },
+    {
+        label: "Business Process Services",
+        desc: "Unveil new ways to disrupt your industry",
+        img: "/business_process_services.jpg"
+    },
+    {
+        label: "Cloud and Infrastructure Services",
+        desc: "Empower your organization with a powerfully designed infrastructure stack and support technologies",
+        img: "/infrastructure_cloud_services.jpg"
+    },
+    {
+        label: "Digital Enterprise Applications",
+        desc: "Experience unparalleled innovation, efficiency and adaptability",
+        img: "/digitalenterprise.jpg"
+    },
+    {
+        label: "Engineering Services",
+        desc: "Enable seamless cyber-physical integration for enhanced visibility and predictability",
+        img: "/integrated_engineering_services.jpg"
+    },
+    {
+        label: "Experience Services",
+        desc: "Practice the art of giving your customers truly memorable experiences",
+        img: "/bornpreview.png"
+    },
+    {
+        label: "Network Services",
+        desc: "Leverage new opportunities to enhance network operations",
+        img: "/network_services.jpg"
+    },
+    {
+        label: "Testing Services",
+        desc: "Accelerate the development of end-to-end automated operations for your business",
+        img: "/testing_services.jpg"
+    }
+]

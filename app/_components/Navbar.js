@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <div className="relative">
-    <nav className="sticky z-[100] inset-x-0 top-0 w-full backdrop-blur-lg transition-all px-10 h-28 py bg-white min-w-full border-b border-gray-100 shadow-sm
+    <nav className="sticky z-[100] inset-x-0 top-0 w-full backdrop-blur-lg transition-all px-10 h-28 py bg-white min-w-full shadow-sm
     ">
         <div className="h-full w-full flex justify-between items-center">
             <div className="relative">
@@ -54,7 +54,7 @@ export default function Navbar() {
         </div>
     </nav>
     {isOpen ? <FullPageNav isOpen = {isOpen} /> : null}
-    
+
 </div>
   )
 }
