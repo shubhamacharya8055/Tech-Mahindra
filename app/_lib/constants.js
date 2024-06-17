@@ -293,3 +293,105 @@ export const CAPABILITIES = [
         img: "/testing_services.jpg"
     }
 ]
+
+
+export const HERO_VIDEO = [
+    {
+        p1 : "The Bat Technology",
+        p2: "Promise",
+        buttonText: "KNOW MORE",
+        url: "./techm1.mp4"
+    },
+    {
+        p1 : `Bat Tech`,
+        p2: "Financial Results for",
+        p3: "Q4'24 Announced",
+        buttonText: "KNOW MORE",
+        url: "./techm2.mp4"
+    },
+    {
+        p1 : `Bat Mobile`,
+        p2: "to Bolster GenAI",
+        p3: "Adoption with watsonX",
+        buttonText: "KNOW MORE",
+        url: "./techm4.mp4"
+    },
+    {
+        p1 : "Bat tech is",
+        p2: "Market Leader in",
+        p3: "Customer Experience",
+        p4: "by HFS Research",
+        buttonText: "KNOW MORE",
+        url: "./techm4.mp4"
+    }
+]
+
+
+export const INDUSTRIES = [
+    {
+        label: "Communications" ,
+        icon: "/wifi.svg",
+        image: "/communicationssmall.jpg" 
+    },
+    {
+        label: "Oil and Gas" ,
+        icon: "/oilgas.svg",
+        image: "/oilsmall.jpg" 
+    },
+    {
+        label: "Energy and utilities" ,
+        icon: "/energy.svg",
+        image: "/energy_0.jpg" 
+    },
+    {
+        label: "Healthcare and Life Sciences" ,
+        icon: "/health.svg",
+        image: "/healthcaresmall.jpg" 
+    },
+    {
+        label: "Hi Tech" ,
+        icon: "/hi_tech.svg",
+        image: "/hi_techsmall.jpg" 
+    },
+    {
+        label: "Insurance" ,
+        icon: "/insurance.svg",
+        image: "/insurancesmall.jpg" 
+    },
+    {
+        label: "Manufacturing" ,
+        icon: "/manufacturing.svg",
+        image: "/manufacturingsmall.jpg" 
+    },
+    {
+        label: "Media and Entertainment" ,
+        icon: "/media.svg",
+        image: "/mediasmall.jpg" 
+    },
+    {
+        label: "Private Equity" ,
+        icon: "/private_equity.svg",
+        image: "/private_equity_small.png" 
+    },
+    {
+        label: "Professional Services" ,
+        icon: "/professional_services.svg",
+        image: "/professional_services_small.png" 
+    },
+    {
+        label: "Retail and Consumer Goods" ,
+        icon: "/retail.svg",
+        image: "/consumer_goodssmall.jpg" 
+    },
+    {
+        label: "Travel, Transportation, Logistics and Hospitality" ,
+        icon: "/logistics.svg",
+        image: "/logisticssmall.jpg" 
+    },
+    {
+        label: "Banking and Financial Services" ,
+        icon: "/bank.svg",
+        image: "/bankingsmall.jpg" 
+    },
+    
+]

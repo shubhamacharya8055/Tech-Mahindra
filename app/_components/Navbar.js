@@ -19,11 +19,11 @@ export default function Navbar() {
         <div className="h-full w-full flex justify-between items-center">
             <div className="relative">
             <Image 
-            src = "./logo.svg"
+            src = "./batman.svg"
             className="object-cover"
-            width={150}
+            width={90}
             alt="Tech Mahindra Logo"
-            height={150}
+            height={90}
             />
             </div>
 

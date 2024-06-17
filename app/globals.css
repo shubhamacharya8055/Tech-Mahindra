@@ -5,9 +5,3 @@
 .no-scrollbar::-webkit-scrollbar {
     display: none; 
   }
-
-.duration-300 {
-    transition-property: filter;
-    transition-duration: 300ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* Default easing */
-}
