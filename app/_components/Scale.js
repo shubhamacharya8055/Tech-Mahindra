@@ -90,7 +90,7 @@ export default function Scale() {
 
                 <div className="flex flex-col gap-y-3 w-full" >
                     <h1 className="xl:text-7xl text-4xl flex-1font-medium xl:font-semibold" ref={ScaleRef}>Scale at Speed</h1>
-                    <div ref={BatRef} className="flex gap-x-2">
+                    <div ref={BatRef} className="flex gap-x-2 flex-row xl:flex-col">
                     <h2 className="xl:text-7xl text-3xl text-red-600 font-semibold" >with Bat</h2>
                     <h3 className="xl:text-7xl text-3xl text-red-700 font-semibold" >Mobile</h3>
                     </div>
