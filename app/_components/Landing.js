@@ -40,8 +40,8 @@ function Landing() {
           {
             y: 0,
             opacity: 1,
-            stagger: 0.3,
-            duration: 0.7,
+            stagger: 0.2,
+            duration: 0.2,
             scrollTrigger: {
               trigger: lineRef.current,
               start: "top 10%",  
@@ -69,19 +69,19 @@ function Landing() {
         const timeline = gsap.timeline();
         timeline.fromTo(
           [titleRef.current, paragraphRef.current],
-          { y: 50, opacity: 0 }, 
-          { y: 0, opacity: 1, stagger: 0.3, duration: 0.7 } 
+          { y: 100, opacity: 0 }, 
+          { y: 0, opacity: 1, stagger: 0.5, duration: 0.7 } 
         );
       }, []);
 
    
 
   return (
-    <div className="relative min-h-[885px] min-w-[100%] overflow-hidden" ref={landRef}>
+    <div className="relative min-h-[885px] min-w-[100%] overflow-hidden" ref={landRef} id="mahindra">
         <div className="flex flex-col w-fit xl:h-[300px] xl:w-[840px] xl:gap-y-5 gap-y-3 px-10 py-4">
-            <h1 ref={titleRef} className="xl:text-8xl text-4xl xl:font-semibold font-medium text-zinc-800 tracking-tight">Scale at Speed</h1>
+            <h1 ref={titleRef} className="xl:text-8xl text-4xl font-normal xl:font-semibold  text-zinc-800 tracking-tight">Scale at Speed</h1>
             <p ref={paragraphRef}
-            className="xl:text-lg text-sm text-gray-700"
+            className="xl:text-lg text-[13px] leading-5 text-gray-700"
             >Our promise to help enterprises across industries transform at speed and bring agility, resilience, and efficiency to their businesses.</p>
         </div>
 

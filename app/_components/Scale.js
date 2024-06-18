@@ -101,7 +101,7 @@ export default function Scale() {
   return (
     <div className="min-w-full min-h-[1050px] overflow-hidden relative" ref={landRef}>
             <div className="xl:py-32 xl:px-24 px-8 py-10 h-full w-full grid grid-cols-2 relative">
-                <div className="flex flex-col gap-y-10 w-full col-span-2 xl:col-span-1">
+                <div className="flex flex-col xl:gap-y-10 gap-y-6 w-full col-span-2 xl:col-span-1">
 
                 <div className="flex flex-col gap-y-3 w-full" >
                     <h1 className="xl:text-7xl text-4xl flex-1font-medium xl:font-semibold" ref={ScaleRef}>Scale at Speed</h1>
@@ -111,13 +111,13 @@ export default function Scale() {
                     </div>
                 </div>
 
-                <p className="flex-1" ref={descriptionRef}>
+                <p className="flex-1 text-xs xl:text-base leading-5" ref={descriptionRef}>
                 Thriving in the current dynamic landscape demands technological solutions that enable both transformative scale and unparalleled speed.
                 </p>
 
                 </div>
 
-                <div className="bg-black absolute z-[999999] xl:top-[75%] xl:right-16 xl:h-[500px] xl:w-[500px] h-[500px] w-[400px] top-[130%] right-3 flex items-center"
+                <div className="bg-black absolute z-[999999] xl:top-[75%] xl:right-16 xl:h-[500px] xl:w-[500px] h-[400px] w-[350px] top-[130%] left-[50%] transform max-sm:-translate-x-[50%] flex items-center"
                 ref={blackBoxRef}
                 >
                     <div className="w-1/2 text-white  mx-auto flex flex-col items-start gap-y-10">

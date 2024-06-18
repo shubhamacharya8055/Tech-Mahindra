@@ -53,6 +53,10 @@ export default function Industries() {
       };
 
       useEffect(() => {
+        scrollToItem()
+      }, [activeIndex])
+
+      useEffect(() => {
         const interval = setInterval(() => {
           handleNext();
           scrollToItem();
@@ -83,9 +87,9 @@ export default function Industries() {
     className="relative min-w-full min-h-full"
     id="industries"
     >
-        <div className="xl:px-20 xl:py-32 px-5 py-20 flex flex-col xl:flex-row justify-between w-full">
-            <h1 className="flex-1 text-6xl font-medium" ref={paragraphRef} >Industries</h1>
-            <p className="flex-1 text-lg xl:basis-60 text-gray-600 h-40 xl:ml-40 " ref={industryRef}>
+        <div className="xl:px-20 xl:py-32 px-5 py-20 flex gap-y-5 flex-col xl:flex-row justify-between w-full">
+            <h1 className="flex-1 xl:text-6xl text-3xl font-medium" ref={paragraphRef} >Industries</h1>
+            <p className="flex-1 xl:text-lg text-sm leading-6 xl:basis-60 text-gray-600 h-40 xl:ml-40 " ref={industryRef}>
             Our expertise spans 13 industries from banking, insurance, telecommunications, media, entertainment, distribution, retail, to many more.</p>
             <div className="flex-1 xl:flex justify-end items-start gap-x-3 hidden  ">
                 <button
@@ -107,22 +111,22 @@ export default function Industries() {
 
         {
             INDUSTRIES.map((item, index) => (
-                <div className={`h-[500px] border border-gray-300 xl:min-w-[30%] min-w-[50%] overflow-hidden cursor-pointer transition-all duration-500 ${activeIndex === index ? "group-hover:min-w-[33%]" : ""}`} key={item.label}
+                <div className={`min-h-fit border border-gray-300 xl:min-w-[30%] min-w-[50%] overflow-hidden cursor-pointer transition-all duration-500 ${activeIndex === index ? "group-hover:min-w-[33%]" : ""}`} key={item.label}
                 onMouseEnter={() => handleEnter(index)}
                 onMouseLeave={handleLeave}
                 >
-                <div className="h-1/2 flex items-center justify-center gap-y-3 flex-col">
+                <div className="h-[200px] xl:h-1/2 flex items-center justify-center gap-y-3 flex-col">
                     <div className="relative ">
                         <Image 
                         src={item.icon}
-                        width={50}
-                        height={50}
+                        width={40}
+                        height={40}
                         className="text-black object-cover"
                         />
                     </div>
-                    <p className="px-5 text-2xl">{item.label}</p>
+                    <p className="px-5 xl:text-2xl text-sm">{item.label}</p>
                 </div>
-                <div className="relative aspect-square">
+                <div className="relative xl:aspect-square aspect-video">
                     <Image 
                     src={item.image}
                     fill
@@ -136,7 +140,7 @@ export default function Industries() {
 
         <div className="xl:px-20 xl:py-20 px-10 py-5 ">
             <div className="h-1 w-full border border-gray-600 bg-gray-400 relative overflow-hidden" >
-            <div className={`absolute inset-x-0 bg-red-500 transition-all duration-1000 h-2`} 
+            <div className={`absolute inset-x-0 bg-red-500 transition-all duration-500 h-2`} 
             style={{width: `${progressWidth}%` }}
             />
             </div>

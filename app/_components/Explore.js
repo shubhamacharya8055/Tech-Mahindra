@@ -70,7 +70,6 @@ export default function Explore() {
         }
       };
 
-    console.log({activeIndex})
 
 
 
@@ -111,7 +110,7 @@ export default function Explore() {
             </div>
 
             <div className="mt-10 border border-white bg-gray-400/50 h-2 relative overflow-hidden">
-                <div className="absolute bg-red-500 inset-0 h-3"
+                <div className="absolute bg-red-500 inset-0 h-3 transition-all duration-500"
                 style={{width: `${progressWidth}%`}}
                 />
             </div>

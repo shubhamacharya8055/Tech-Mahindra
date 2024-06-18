@@ -79,7 +79,7 @@ export default function Rise() {
 
 
                 {/* <div className="w-[]"> */}
-                <div className="flex flex-col xl:gap-y-0 gap-y-5 items-start justify-evenly cursor-pointer xl:w-1/2 w-fit" 
+                <div className="flex flex-col xl:gap-y-0 gap-y-8 items-start justify-evenly cursor-pointer xl:w-1/2 w-fit" 
                 >
                 <h1 className="font-semibold w-fit text-5xl tracking-tight leading-10" 
                 ref={textRef}

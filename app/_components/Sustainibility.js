@@ -31,11 +31,11 @@ export default function Sustainibility() {
   return (
     <div className='min-w-full min-h-[1000px] xl:my-10 overflow-hidden relative'>
         <div className='h-[500px] bg-white relative' />
-        <div ref={boxRef} className='bg-black gap-y-10 absolute xl:left-20 left-4 h-[500px] w-[400px] xl:w-[500px] z-40 top-40 flex justify-center flex-col text-white items-center'>
-            <h1 className='w-2/3 text-3xl'>
+        <div ref={boxRef} className='bg-black gap-y-10 absolute xl:left-20 left-[50%] max-sm:-translate-x-[50%] max-sm:transform h-[400px] w-[350px] xl:w-[500px] xl:h-[500px] z-40 top-40 flex justify-center flex-col text-white items-center'>
+            <h1 className='w-2/3 xl:text-3xl text-2xl'>
             Towards a Sustainable Future
             </h1>
-            <p className='w-2/3 text-base'>Learn how we maintain a balance between sustainability and overall business profitability.</p>
+            <p className='w-2/3 xl:text-base text-sm leading-7'>Learn how we maintain a balance between sustainability and overall business profitability.</p>
             <div className='w-2/3'>
             <button className='border border-white px-5 py-4'>
                 OUR SUSTAINIBILITY EFFORTS

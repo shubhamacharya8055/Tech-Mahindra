@@ -1,15 +1,26 @@
+"use client"
 import Image from "next/image";
 import { FOOTER_LINKS_ONE, FOOTER_LINKS_THREE, FOOTER_LINKS_TWO, FOOTER_SOCIAL_LINKS } from "../_lib/constants";
 import Link from "next/link";
 
 export default function Footer() {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth" // For smooth scrolling
+        });
+      };
+
   return (
     <div className="w-full min-h-[500px] xl:h-[500px] bg-black" id="about">
         <div className="px-10 pt-16 divide-y divide-gray-200 h-full flex flex-col justify-between">
 
             <div className="w-full flex xl:flex-row flex-col gap-y-8 justify-between">
 
-                <div className="relative xl:w-1/4 w-full">
+                <div className="relative xl:w-1/4 w-full cursor-pointer"
+                onClick={scrollToTop}
+                >
                     <Image
                     src={"/techm_logo_white.png.webp"}
                     width={150}
@@ -56,12 +67,12 @@ export default function Footer() {
             </div>
             <div className="text-gray-200 flex xl:flex-row flex-col gap-y-5 justify-between xl:py-10 py-5 text-sm ">
                 <div className="pointer-events-none">
-                <p>&copy; Bat Limited</p>
+                <p className="text-xs xl:text-base">&copy; Bat Limited</p>
                 </div>
                 <ul className="flex xl:gap-x-3 gap-x-2">
                     {FOOTER_LINKS_THREE.map((item) => (
                         <li className="flex gap-x-2 group" key={item.label}>
-                            <Link href={item.link} className="group-hover:underline underline-offset-4 text-sm xl:text-base hover:opacity-65 transition-opacity duration-500">
+                            <Link href={item.link} className="group-hover:underline underline-offset-4 text-xs xl:text-base hover:opacity-65 transition-opacity duration-500">
                             {item.label}
                             </Link>
                             <p>.</p>

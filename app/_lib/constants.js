@@ -561,7 +561,7 @@ export const FOOTER_LINKS_THREE = [
 
 export const openToGmail = () => {
     const subject = "I want to develop a frontend web application";
-    const body = ""; // You can add a pre-filled body if you want
-    const mailtoLink = `mailto:your_email@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const body = ""; 
+    const mailtoLink = `mailto:shubcharya8055@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
 }

@@ -3,12 +3,24 @@
 import Link from "next/link";
 import { NAV_LINKS } from "../_lib/constants";
 import { ChevronDown, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export default function FullPageNav({isOpen}) {
 
     const [activeDropdown, setActiveDropdown] = useState(null);
     const [activeSubDropdown, setActiveSubDropdown] = useState({});
+
+    const navRef = useRef();
+
+    useGSAP(() => {
+      gsap.from(navRef.current , {
+        y:200 , 
+        opacity: 0 , 
+        duration: 0.5,
+      })
+    } , [])
 
     console.log({activeDropdown})
   
@@ -25,7 +37,7 @@ export default function FullPageNav({isOpen}) {
     };
 
     const renderDropdown = (items, parentIndex = null) => (
-        <ul className="absolute top-full inset-x-0 z-10 bg-white shadow-md w-full min-h-screen overflow-y-scroll no-scrollbar divide-y">
+        <ul className="absolute top-full inset-x-0 z-[99999] bg-white shadow-md w-full  min-h-screen overflow-y-scroll no-scrollbar divide-y">
           {items.map((item, index) => (
             <li key={item.label} className="px-9 pr-11 py-8 h-16 flex items-center justify-between relative">
                 <Link href={item.href} className="text-lg font-medium hover:text-red-600">
@@ -48,7 +60,9 @@ export default function FullPageNav({isOpen}) {
       );
 
   return (
-    <div className={`absolute w-full z-[999999] bg-white top-28 inset-x-0 h-fit transition-transform duration-300 delay-150 ${isOpen ? "translate-y-0" : "-translate-y-full"}`}>
+    <div className={`absolute w-full z-[999999] bg-white top-20 inset-x-0 h-screen transition-transform duration-300 delay-150 ${isOpen ? "translate-y-0" : "-translate-y-full"}`}
+    ref={navRef}
+    >
         <ul className="h-full w-full divide-y divide-gray-300 flex flex-col">
             {NAV_LINKS.map((nav , index) => (
                 <li key={nav.label} className="px-11 py-12 h-16 flex items-center justify-between relative">
