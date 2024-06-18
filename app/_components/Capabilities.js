@@ -27,7 +27,7 @@ export default function Capabilities() {
 
   return (
     <div
-    className="min-w-full border border-red-600"
+    className="min-w-full"
     >
         <div className="xl:px-20 xl:py-20 px-8 py-14 w-full h-full space-y-10">
             <div className="flex flex-col xl:flex-row gap-y-5 items-start justify-center" ref={capRef}>
@@ -37,7 +37,7 @@ export default function Capabilities() {
                 </p>
             </div>
 
-            <div className="grid xl:grid-cols-4 grid-cols-1 grid-rows-2 gap-3 border border-red-600 ">
+            <div className="grid xl:grid-cols-4 grid-cols-1 grid-rows-2 gap-3">
                 {CAPABILITIES.map((item) => (
                     <div key={item.label} className=" h-[450px] relative group border flex-grow ">
                         <div className="relative h-full w-full overflow-hidden">

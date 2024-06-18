@@ -77,7 +77,7 @@ export default function Industries() {
         }
       };
 
-    
+      
   return (
     <div
     className="relative min-w-full min-h-full"
@@ -133,8 +133,8 @@ export default function Industries() {
         }
         </div>
 
-        <div className="xl:px-20 xl:py-20 px-10 py-10 ">
-            <div className="h-2 w-full border border-gray-600 bg-gray-400 relative overflow-hidden" >
+        <div className="xl:px-20 xl:py-20 px-10 py-5 ">
+            <div className="h-1 w-full border border-gray-600 bg-gray-400 relative overflow-hidden" >
             <div className={`absolute inset-x-0 bg-red-500 transition-all duration-1000 h-2`} 
             style={{width: `${progressWidth}%` }}
             />

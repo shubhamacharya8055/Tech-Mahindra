@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className="sticky z-[100] inset-x-0 top-0 w-full backdrop-blur-lg transition-all px-10 h-28 py bg-white min-w-full shadow-sm
     ">
         <div className="h-full w-full flex justify-between items-center">
-            <div className="relative">
+            <Link href={"/"} className="relative">
             <Image 
             src = "./batman.svg"
             className="object-cover"
@@ -25,7 +25,7 @@ export default function Navbar() {
             alt="Tech Mahindra Logo"
             height={90}
             />
-            </div>
+            </Link>
 
             <ul className="items-center gap-x-14 mt-2 hidden xl:flex">
                 {NAV_LINKS.map((nav) => (

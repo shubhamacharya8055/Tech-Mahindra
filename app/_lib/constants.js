@@ -1,3 +1,4 @@
+
 export const NAV_LINKS = [
     {
         label: "ABOUT US" , 
@@ -246,7 +247,7 @@ export const NAV_LINKS = [
     },
     {
         label: "CONTACT US",
-        href: "/contact"
+        href: "/carrer"
     }
 ]
 
@@ -394,4 +395,166 @@ export const INDUSTRIES = [
         image: "/bankingsmall.jpg" 
     },
     
+]
+
+
+export const STUDIES = [
+ {
+    label: "Automated, Smarter Drug Discovery Process for US Biotech Company" , 
+    img: "/leading.jpg"
+ },
+ {
+    label: "ML-based Demand Forecasting to Enhance Inventory Control for Japanese Auto Major",
+    img: "/leading1.jpg"
+ },
+ {
+    label: "SaaS-based Insurance Systems Suite for NZ based Automobile Insurance Company",
+    img: "/leading2.jpg"
+ },
+ {
+    label: "Strategic Data Platform for Telia" , 
+    img: "/leading3.jpg"
+ },
+ {
+    label: "Secure, Scalable, Multi-Customer Isolated Environment on AWS",
+    img: "/leading4.jpg"
+ },
+ {
+    label: "Digitalized Policy Issuance Journey to Grow SMB Lines for US-based P&C Insurer",
+    img: "/leading5.jpg"
+ },
+ {
+    label: "Smarter Business Transformations for Oman's Leading O&G Firm",
+    img: "/leading6.jpg"
+ },
+ {
+    label: "Surplus Insurance Business and Profitability through Pega for US P&C Insurance Firm",
+    img: "/leading7.jpg"
+ },
+ {
+    label: "Digital Transformation for an Insurance Major in Thailand",
+    img: "/leading8.jpg"
+ },
+ {
+    label: "Full-suite Guidewire Cloud for AIOI Nissay Dowa Insurance",
+    img: "/leading9.jpg"
+ },
+ {
+    label: "Access Control Management for Government Agency",
+    img: "/leading10.jpg"
+ },
+ {
+    label: "Digital and IT Strategy Roadmap for Upcoming Middle Eastern Smart City",
+    img: "/leading11.jpg"
+ },
+ {
+    label: "Next Gen Contact Center Framework for a Canadian Retailer",
+    img: "/leading12.jpg"
+ },
+ {
+    label: "EBITDA Savings with Improved Customer Experience for a US-based Marketing Company",
+    img: "/leading13.jpg"
+ },
+ {
+    label: "14000+ Clinical Hours Saved with Digital Content Process for a Dutch Publishing Company",
+    img: "/leading14.jpg"
+ },
+ {
+    label: "End-to-end Enterprise Network Efficiency Improved by 40% for Canadian Media Conglomerate",
+    img: "/leading15.jpg"
+ },
+ {
+    label: "Strategic Sourcing of Aircraft Parts for American Aerospace and Defense Major",
+    img: "/leading16.jpg"
+ },
+ {
+    label: "Customer Experiences Transformed with SRE Framework for Fortune 500 Firm" , 
+    img: "/leading17.jpg"
+ },
+ {
+    label: "Transformed Data and Analytics Applications with AWS",
+    img: "/leading18.jpg"
+ },
+ {
+    label: "Engineered Solutions and Support for GovTech Secure Hybrid Infrastructure Pipeline",
+    img: "/leading19.jpg"
+ },
+ {
+    label: "Automated, Smarter Drug Discovery Process for US Biotech Company",
+    img: "/leading20.jpg"
+ }
+]
+
+export const EXPLORE = [
+    {
+        label: "Why TechM" , 
+        img: "/one.jpg"
+    },
+    {
+        label: "Recognition",
+        img: "/two.jpg"
+    },
+    {
+        label: "Our Brand",
+        img: "/six.jpg"
+    },
+    {
+        label: "Corporate Citizenship",
+        img: "/four.jpg"
+    },
+    {
+        label: "News" , 
+        img: "/five.jpg"
+    },
+    {
+        label: "views",
+        img: "/news.jpg"
+    },
+    {
+        label: "Events" , 
+        img: "/events.jpg"
+    }
+]
+
+export const FOOTER_LINKS_ONE = [
+    { label: "Our Brand", link: "/our-brand" },
+  { label: "Sustainability", link: "/sustainability" },
+  { label: "Corporate Citizenship", link: "/corporate-citizenship" },
+  { label: "Investor Relations", link: "/investor-relations" },
+  { label: "Contact Us", link: "/contact-us" }
+]
+
+export const FOOTER_LINKS_TWO = [
+    { label: "News", link: "/news" },
+  { label: "Events", link: "/events" },
+  { label: "Careers", link: "/careers" },
+  { label: "Alumni", link: "/alumni" },
+  { label: "Sitemap", link: "/sitemap" },
+  { label: "Cookie Preferences", link: "/cookie-preferences" },
+]
+
+
+export const FOOTER_SOCIAL_LINKS = [
+    {
+        img: "/facebook.svg"
+    },
+    {
+        img: "/twitter.svg"
+    },
+    {
+        img: "/linkedin.svg"
+    },
+    {
+        img: "/youtube.svg"
+    },
+    {
+        img: "/instagram.svg"
+    }
+]
+
+export const FOOTER_LINKS_THREE = [
+    { label: "Terms of Use", link: "/terms-of-use" },
+    { label: "Accessibility", link: "/accessibility" },
+    { label: "Privacy", link: "/privacy" },
+    { label: "Cookie", link: "/cookie-policy" }
 ]

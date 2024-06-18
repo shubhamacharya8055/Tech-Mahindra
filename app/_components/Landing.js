@@ -11,6 +11,7 @@ function Landing() {
 
     const titleRef = useRef(null);
     const paragraphRef =  useRef(null);
+    const lineRef = useRef(null);
 
     const [activeIndex, setActiveIndex] = useState(0)
 
@@ -31,14 +32,34 @@ function Landing() {
     } , [activeIndex])
 
     useGSAP(() => {
-       
-    gsap.from([titleRef.current , paragraphRef.current] , {
-        y:50,
-        opacity: 0,
-        stagger: 0.3,
-        duration: 0.7,
-    })
-    } , [])
+        gsap.fromTo(
+          [titleRef.current, paragraphRef.current],
+          { y: 50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            stagger: 0.3,
+            duration: 0.7,
+            scrollTrigger: {
+              trigger: lineRef.current,
+              start: "top 10%",  
+              end: "top 50%",   
+              toggleActions: "play none none restart",
+            },
+          }
+        );
+      }, []);
+
+      useEffect(() => {
+        const timeline = gsap.timeline();
+        timeline.fromTo(
+          [titleRef.current, paragraphRef.current],
+          { y: 50, opacity: 0 }, 
+          { y: 0, opacity: 1, stagger: 0.3, duration: 0.7 } 
+        );
+      }, []);
+
+   
 
   return (
     <div className="relative min-h-[885px] min-w-[100%] overflow-hidden">
@@ -51,7 +72,7 @@ function Landing() {
 
         <div className="absolute z-[70] text-white xl:right-32 xl:bottom-32 bottom-56 right-10">
             {HERO_VIDEO.map((item, index) => (
-                <div className={`h-full w-full flex flex-col items-end xl:gap-y-3 gap-y-2 ${activeIndex === index ? "block" : "hidden"}`} key={item.url}>
+                <div className={`h-full w-full flex flex-col items-end xl:gap-y-3 gap-y-2 ${activeIndex === index ? "block" : "hidden"}`} key={item.p1}>
                 {item.p1 && <p className="xl:text-4xl text-2xl font-medium">{item.p1}</p>}
                 {item.p2 && <p className="xl:text-4xl text-2xl font-medium">{item.p2}</p>}
                 {item.p3 && <p className="xl:text-4xl text-2xl font-medium">{item.p3}</p>}
@@ -85,10 +106,12 @@ function Landing() {
         </div>
 
 
+
     {/* Black Diagonal Line */}
     <div
       className="relative h-1 xl:top-[1rem] top-[10rem] z-50 left-0 w-full bg-black transform -skew-y-[18deg]"
-    >    
+     ref={lineRef}
+     >    
        {HERO_VIDEO.map((item, index) => (
          <video key={item.p1}
          className={`absolute top-0 right-0 min-w-full z-0  h-[800px] object-cover object-right-top ${activeIndex === index ? "block" : "hidden" }`}
