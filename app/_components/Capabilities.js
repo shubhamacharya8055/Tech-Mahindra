@@ -28,6 +28,7 @@ export default function Capabilities() {
   return (
     <div
     className="min-w-full"
+    id="capabilities"
     >
         <div className="xl:px-20 xl:py-20 px-8 py-14 w-full h-full space-y-10">
             <div className="flex flex-col xl:flex-row gap-y-5 items-start justify-center" ref={capRef}>

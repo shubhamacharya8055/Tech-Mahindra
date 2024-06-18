@@ -27,12 +27,12 @@ function ScrollToTopButton() {
 
   return (
     <button
-      className={`fixed xl:bottom-8 xl:right-8 bottom-5 right-5 bg-gray-300 hover:bg-gray-700/70 group text-white font-bold p-4 rounded-full shadow-lg transition-opacity duration-300 z-[999999999] ${
+      className={`fixed xl:bottom-8 xl:right-8 bottom-5 right-5 bg-[#7F7F7F] hover:bg-zinc-900 group text-white font-bold p-2 rounded-full shadow-lg transition-opacity duration-300 z-[999999999] ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       onClick={scrollToTop}
     >
-      <ArrowUp className="text-black group-hover:text-white" />
+      <ArrowUp className="text-white group-hover:text-white " />
     </button>
   );
 }

@@ -1,11 +1,10 @@
 import Image from "next/image";
 import { FOOTER_LINKS_ONE, FOOTER_LINKS_THREE, FOOTER_LINKS_TWO, FOOTER_SOCIAL_LINKS } from "../_lib/constants";
 import Link from "next/link";
-import { Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
-    <div className="w-full min-h-[500px] xl:h-[500px] bg-black">
+    <div className="w-full min-h-[500px] xl:h-[500px] bg-black" id="about">
         <div className="px-10 pt-16 divide-y divide-gray-200 h-full flex flex-col justify-between">
 
             <div className="w-full flex xl:flex-row flex-col gap-y-8 justify-between">
@@ -40,7 +39,7 @@ export default function Footer() {
                     <ul className="flex gap-x-3 items-center xl:justify-end justify-between " >
                             {FOOTER_SOCIAL_LINKS.map((item, index) => (
                                 <li className="relative h-8 w-8" key={index}>
-                            <Link href={"/one"} className="group w-full h-full ">
+                            <Link href={"https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="} className="group w-full h-full ">
                             <Image 
                             src={item.img}
                             fill
@@ -57,7 +56,7 @@ export default function Footer() {
             </div>
             <div className="text-gray-200 flex xl:flex-row flex-col gap-y-5 justify-between xl:py-10 py-5 text-sm ">
                 <div className="pointer-events-none">
-                <p>&copy; Tech Mahindra Limited</p>
+                <p>&copy; Bat Limited</p>
                 </div>
                 <ul className="flex xl:gap-x-3 gap-x-2">
                     {FOOTER_LINKS_THREE.map((item) => (

@@ -2,7 +2,7 @@
 export const NAV_LINKS = [
     {
         label: "ABOUT US" , 
-        href: "/about",
+        href: "/#about",
         info: [
             {
                 label: "Corporate Overview",
@@ -65,7 +65,7 @@ export const NAV_LINKS = [
     },
     {
         label: "CAPABILITIES" , 
-        href: "/capabilities",
+        href: "/#capabilities",
         info: [
             {
                 label: "OUR SERVICES",
@@ -207,7 +207,7 @@ export const NAV_LINKS = [
     },
     {
         label: "INDUSTRIES" , 
-        href: "/industries",
+        href: "/#industries",
         info: [
             { label: 'Banking & Financial Services', href: '/banking-financial-services' },
             { label: 'Communications', href: '/communications' },
@@ -226,7 +226,7 @@ export const NAV_LINKS = [
     },
     {
         label: "INSIGHTS",
-        href: "/insights",
+        href: "/#insights",
         info: [
             { label: 'Case Studies', href: '/case-studies' },
             { label: 'Views', href: '/views' },
@@ -237,7 +237,7 @@ export const NAV_LINKS = [
     },
     {
         label: "CAREERS" , 
-        href: "/careers",
+        href: "/#careers",
         info: [
             { label: 'Why TechM', href: '/why-techm' },
             { label: 'The TechM Way', href: '/the-techm-way' },
@@ -247,7 +247,7 @@ export const NAV_LINKS = [
     },
     {
         label: "CONTACT US",
-        href: "/carrer"
+        href: "/#careers"
     }
 ]
 
@@ -517,20 +517,20 @@ export const EXPLORE = [
 ]
 
 export const FOOTER_LINKS_ONE = [
-    { label: "Our Brand", link: "/our-brand" },
-  { label: "Sustainability", link: "/sustainability" },
-  { label: "Corporate Citizenship", link: "/corporate-citizenship" },
-  { label: "Investor Relations", link: "/investor-relations" },
-  { label: "Contact Us", link: "/contact-us" }
+    { label: "Our Brand", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+  { label: "Sustainability", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+  { label: "Corporate Citizenship", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+  { label: "Investor Relations", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+  { label: "Contact Us", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" }
 ]
 
 export const FOOTER_LINKS_TWO = [
-    { label: "News", link: "/news" },
-  { label: "Events", link: "/events" },
-  { label: "Careers", link: "/careers" },
-  { label: "Alumni", link: "/alumni" },
-  { label: "Sitemap", link: "/sitemap" },
-  { label: "Cookie Preferences", link: "/cookie-preferences" },
+    { label: "News", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+  { label: "Events", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+  { label: "Careers", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+  { label: "Alumni", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+  { label: "Sitemap", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+  { label: "Cookie Preferences", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
 ]
 
 
@@ -553,8 +553,15 @@ export const FOOTER_SOCIAL_LINKS = [
 ]
 
 export const FOOTER_LINKS_THREE = [
-    { label: "Terms of Use", link: "/terms-of-use" },
-    { label: "Accessibility", link: "/accessibility" },
-    { label: "Privacy", link: "/privacy" },
-    { label: "Cookie", link: "/cookie-policy" }
+    { label: "Terms of Use", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+    { label: "Accessibility", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+    { label: "Privacy", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+    { label: "Cookie", link: "https://www.instagram.com/essay.1999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" }
 ]
+
+export const openToGmail = () => {
+    const subject = "I want to develop a frontend web application";
+    const body = ""; // You can add a pre-filled body if you want
+    const mailtoLink = `mailto:your_email@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+}

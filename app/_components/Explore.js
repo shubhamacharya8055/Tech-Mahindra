@@ -75,7 +75,7 @@ export default function Explore() {
 
 
   return (
-    <div className="bg-black min-w-full min-h-fit">
+    <div className="bg-black min-w-full min-h-fit" id="insights">
         <div className="w-full h-full px-10 py-16 pb-32">
 
             <div className="w-full h-fit flex justify-between items-center" ref={exploreRef}>

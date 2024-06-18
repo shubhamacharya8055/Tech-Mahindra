@@ -11,11 +11,13 @@ import { useRef } from "react"
 gsap.registerPlugin(ScrollTrigger)
 export default function Scale() {
 
-    const ScaleRef = useRef();
-    const BatRef = useRef();
-    const descriptionRef = useRef();
-    const imageRef = useRef();
-    const blackBoxRef = useRef()
+    const ScaleRef = useRef(null);
+    const BatRef = useRef(null);
+    const descriptionRef = useRef(null);
+    const imageRef = useRef(null);
+    const blackBoxRef = useRef(null)
+    const redRef = useRef(null)
+    const landRef = useRef(null)
 
 
     useGSAP(() => {
@@ -81,10 +83,23 @@ export default function Scale() {
             }
         })
 
+        gsap.from(redRef.current , {
+            x: -1200,
+            duration: 3 , 
+            opacity: 1 , 
+            scrollTrigger: {
+                trigger: landRef.current , 
+                toggleActions: "restart none none reverse",
+                start: "20% 10%" , 
+                end: "90% 50%",
+                scrub: true
+            }
+        })
+
     } , [])
 
   return (
-    <div className="min-w-full min-h-[1050px] overflow-hidden relative">
+    <div className="min-w-full min-h-[1050px] overflow-hidden relative" ref={landRef}>
             <div className="xl:py-32 xl:px-24 px-8 py-10 h-full w-full grid grid-cols-2 relative">
                 <div className="flex flex-col gap-y-10 w-full col-span-2 xl:col-span-1">
 
@@ -122,6 +137,8 @@ export default function Scale() {
     <div
       className="relative h-2 xl:top-[1rem] top-[10rem] left-0 w-full bg-black transform -skew-y-[18deg] mt-32 xl:mt-0"
     >  
+    <div className="absolute bg-red-600 h-2 -top-[8px]  z-50 inset-0" ref={redRef}/>
+
     <div className="relative min-h-screen aspect-video overflow-hidden">
         <Image 
         src={"/nxtnow.jpg"}

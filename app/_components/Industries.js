@@ -81,6 +81,7 @@ export default function Industries() {
   return (
     <div
     className="relative min-w-full min-h-full"
+    id="industries"
     >
         <div className="xl:px-20 xl:py-32 px-5 py-20 flex flex-col xl:flex-row justify-between w-full">
             <h1 className="flex-1 text-6xl font-medium" ref={paragraphRef} >Industries</h1>

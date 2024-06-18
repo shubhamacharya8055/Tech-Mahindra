@@ -12,6 +12,8 @@ function Landing() {
     const titleRef = useRef(null);
     const paragraphRef =  useRef(null);
     const lineRef = useRef(null);
+    const redRef = useRef(null)
+    const landRef = useRef(null)
 
     const [activeIndex, setActiveIndex] = useState(0)
 
@@ -48,6 +50,19 @@ function Landing() {
             },
           }
         );
+
+        gsap.from(redRef.current , {
+            x: -1200,
+            duration: 3 , 
+            opacity: 1 , 
+            scrollTrigger: {
+                trigger: landRef.current , 
+                toggleActions: "restart none none reverse",
+                start: "0% 10%" , 
+                end: "90% 50%",
+                scrub: true
+            }
+        })
       }, []);
 
       useEffect(() => {
@@ -62,7 +77,7 @@ function Landing() {
    
 
   return (
-    <div className="relative min-h-[885px] min-w-[100%] overflow-hidden">
+    <div className="relative min-h-[885px] min-w-[100%] overflow-hidden" ref={landRef}>
         <div className="flex flex-col w-fit xl:h-[300px] xl:w-[840px] xl:gap-y-5 gap-y-3 px-10 py-4">
             <h1 ref={titleRef} className="xl:text-8xl text-4xl xl:font-semibold font-medium text-zinc-800 tracking-tight">Scale at Speed</h1>
             <p ref={paragraphRef}
@@ -105,13 +120,17 @@ function Landing() {
             ))}
         </div>
 
-
+    
 
     {/* Black Diagonal Line */}
     <div
       className="relative h-1 xl:top-[1rem] top-[10rem] z-50 left-0 w-full bg-black transform -skew-y-[18deg]"
      ref={lineRef}
      >    
+
+    <div className="absolute bg-red-600 h-2 -top-[8px]  z-50 inset-0" ref={redRef}/>
+
+
        {HERO_VIDEO.map((item, index) => (
          <video key={item.p1}
          className={`absolute top-0 right-0 min-w-full z-0  h-[800px] object-cover object-right-top ${activeIndex === index ? "block" : "hidden" }`}

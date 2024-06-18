@@ -12,6 +12,10 @@ export default function Navbar() {
 
     const [isOpen, setIsOpen] = useState(false);
 
+    const scrollToSection = (e) => {
+        
+    }
+
   return (
     <div className="relative">
     <nav className="sticky z-[100] inset-x-0 top-0 w-full backdrop-blur-lg transition-all px-10 h-28 py bg-white min-w-full shadow-sm
@@ -30,7 +34,16 @@ export default function Navbar() {
             <ul className="items-center gap-x-14 mt-2 hidden xl:flex">
                 {NAV_LINKS.map((nav) => (
                     <li key={nav.label} className="relative group">
-                        <Link href={nav.href} className="font-semibold text-lg relative z-10 ">
+                        <Link href={nav.href} className="font-semibold text-lg relative z-10"
+                        onClick={(e) => {
+                            e.preventDefault(); 
+                            const targetId = nav.href.split('#')[1]; 
+                            const element = document.getElementById(targetId);
+                            if (element) {
+                                element.scrollIntoView({ behavior: 'smooth' }); 
+                            }
+                        }}
+                        >
                         {nav.label}
                         </Link>
                         <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gray-800 scale-x-0 group-hover:scale-x-90 origin-left transition-transform duration-300 delay-100"></div>
