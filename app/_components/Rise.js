@@ -87,7 +87,7 @@ export default function Rise() {
                     Rise
                 </h1>
                 <p className="text-gray-800 w-fit xl:w-5/6" ref={paragraphRef}>
-                At Tech Mahindra, 'Rise' is our core brand pillar that goes beyond business. It underscores our entire organization's culture and how we inspire our employees, stakeholders, and communities to uphold the three core tenets of this philosophy – Rise for an equal world, to be future-ready, and to create value.
+                At Tech Mahindra, Rise is our core brand pillar that goes beyond business. It underscores our entire organizations culture and how we inspire our employees, stakeholders, and communities to uphold the three core tenets of this philosophy – Rise for an equal world, to be future-ready, and to create value.
                 </p>
                 <button ref={buttonRef} className="text-sm w-fit font-medium hover:text-red-600 mt-10" >
                 LEARN MORE

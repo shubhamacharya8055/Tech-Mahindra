@@ -38,8 +38,8 @@ export default function Footer() {
 
                 <div className="xl:w-1/3 w-full pb-10">
                     <ul className="flex gap-x-3 items-center xl:justify-end justify-between " >
-                            {FOOTER_SOCIAL_LINKS.map((item) => (
-                                <li className="relative h-8 w-8">
+                            {FOOTER_SOCIAL_LINKS.map((item, index) => (
+                                <li className="relative h-8 w-8" key={index}>
                             <Link href={"/one"} className="group w-full h-full ">
                             <Image 
                             src={item.img}
@@ -61,7 +61,7 @@ export default function Footer() {
                 </div>
                 <ul className="flex xl:gap-x-3 gap-x-2">
                     {FOOTER_LINKS_THREE.map((item) => (
-                        <li className="flex gap-x-2 group">
+                        <li className="flex gap-x-2 group" key={item.label}>
                             <Link href={item.link} className="group-hover:underline underline-offset-4 text-sm xl:text-base hover:opacity-65 transition-opacity duration-500">
                             {item.label}
                             </Link>
