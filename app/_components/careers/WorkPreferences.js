@@ -8,7 +8,7 @@ export default function WorkPreferences() {
     <div className="flex gap-x-5">
 
     {workPreferences.map((work) => (
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2" key={work.label}>
            <Checkbox id={work.value} />
            <label
              htmlFor={work.value}
