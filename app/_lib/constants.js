@@ -237,7 +237,7 @@ export const NAV_LINKS = [
     },
     {
         label: "CAREERS" , 
-        href: "/#careers",
+        href: "/careers",
         info: [
             { label: 'Why TechM', href: '/why-techm' },
             { label: 'The TechM Way', href: '/the-techm-way' },
@@ -565,3 +565,24 @@ export const openToGmail = () => {
     const mailtoLink = `mailto:shubcharya8055@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
 }
+
+
+export const CITIES = [
+    {"label": "Mumbai", "value": "mumbai"},
+    {"label": "Delhi", "value": "delhi"},
+    {"label": "Chennai", "value": "chennai"},
+    {"label": "Kolkata", "value": "kolkata"},
+    {"label": "Bangalore", "value": "bangalore"},
+    {"label": "Hyderabad", "value": "hyderabad"},
+    {"label": "Ahmedabad", "value": "ahmedabad"},
+    {"label": "Pune", "value": "pune"},
+    {"label": "Surat", "value": "surat"},
+    {"label": "Jaipur", "value": "jaipur"},
+];
+
+export const workPreferences = [
+    { label: "Remote", value: "remote" , icon: "home" },
+    { label: "Office", value: "office", icon: "office" },
+    { label: "Open to Relocation", value: "open_to_relocation" , icon: "globe" },
+  ];
+  

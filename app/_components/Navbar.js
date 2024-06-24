@@ -36,6 +36,11 @@ export default function Navbar() {
                     <li key={nav.label} className="relative group">
                         <Link href={nav.href} className="font-semibold text-sm relative z-10"
                         onClick={(e) => {
+                            const aHref = e.target.href.split("/").pop();
+                            const careerHref = "careers"
+
+                            if(aHref === careerHref) return
+                            
                             e.preventDefault(); 
                             const targetId = nav.href.split('#')[1]; 
                             const element = document.getElementById(targetId);
